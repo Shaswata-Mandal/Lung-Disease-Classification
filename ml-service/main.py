@@ -1,7 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, Form
 from PIL import Image
 import io
-
 from services.download_models import download_models
 from services.predict import load_models, predict, compare_models
 
