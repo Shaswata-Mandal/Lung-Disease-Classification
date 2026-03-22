@@ -1,7 +1,9 @@
-fastapi
-uvicorn
-tensorflow
-pillow
-python-multipart
-gdown
-numpy
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+tensorflow==2.16.1
+keras==3.3.3
+pillow==10.3.0
+python-multipart==0.0.9
+gdown==5.2.0
+numpy==1.26.4
+scipy==1.13.0
