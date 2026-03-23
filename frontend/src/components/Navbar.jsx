@@ -33,9 +33,8 @@ export default function Navbar() {
     path === '/' ? location.pathname === '/' : location.pathname.startsWith(path);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-[#06070e]/90 backdrop-blur-xl border-b border-white/70' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#06070e]/90 backdrop-blur-xl border-b border-white/70' : 'bg-transparent'
+      }`}>
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
 
         {/* Logo */}
@@ -43,7 +42,11 @@ export default function Navbar() {
           onClick={() => handleNav('/')}
           className="flex gap-2 cursor-pointer font-display font-extrabold text-lg tracking-wide text-white"
         >
-          <span className='flex items-center'><img src={logo} className='h-6 w-6' alt="" /></span>Pulmora<span className="text-violet-400">.ml</span>
+          <span className='flex items-center'><img src={logo} className='h-6 w-6' alt="" /></span>
+          <div>
+            <span>Pulmora</span>
+            <span className="text-violet-400">.ml</span>
+          </div>
         </button>
 
         {/* Desktop links */}
@@ -52,9 +55,8 @@ export default function Navbar() {
             <li key={l.path}>
               <button
                 onClick={() => handleNav(l.path)}
-                className={`cursor-pointer text-sm font-medium transition-colors duration-200 relative pb-0.5 ${
-                  isActive(l.path) ? 'text-white' : 'text-slate-400 hover:text-white'
-                }`}
+                className={`cursor-pointer text-sm font-medium transition-colors duration-200 relative pb-0.5 ${isActive(l.path) ? 'text-white' : 'text-slate-400 hover:text-white'
+                  }`}
               >
                 {l.label}
                 {isActive(l.path) && (
@@ -99,11 +101,10 @@ export default function Navbar() {
               <li key={l.path}>
                 <button
                   onClick={() => handleNav(l.path)}
-                  className={`cursor-pointer w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                    isActive(l.path)
+                  className={`cursor-pointer w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-colors ${isActive(l.path)
                       ? 'bg-violet-600/20 text-violet-300'
                       : 'text-slate-400 hover:text-white hover:bg-white/5'
-                  }`}
+                    }`}
                 >
                   {l.label}
                 </button>

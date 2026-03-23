@@ -201,15 +201,15 @@ export const TEAM = [
     role: 'ML Engineer',
     emoji: '👨‍💻',
     dept: 'B.Tech BAI',
-    linkedin: null,
-    github: null,
+    linkedin: "https://www.linkedin.com/in/arunim-gogoi-4b1848340/",
+    github: "https://github.com/Arunim-Gogoi",
   },
   {
     name: 'Anwesh Bhattacharya',
     role: 'ML Engineer',
     emoji: '👨‍💻',
     dept: 'B.Tech BCE',
-    linkedin: "https://www.linkedin.com/in/anwesh-bhattacharya-8b9351289",
+    linkedin: "https://www.linkedin.com/in/anwesh-bhattacharya-8b9351289/",
     github: "https://github.com/AnweshBhattacharya",
   },
   {

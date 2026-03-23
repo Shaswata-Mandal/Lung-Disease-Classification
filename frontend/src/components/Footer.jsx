@@ -19,13 +19,20 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="flex flex-col max-sm:items-center flex-1 min-w-0">
+            
             <div className="flex gap-2 font-display font-extrabold text-lg tracking-wide mb-3">
-              <span className='flex items-center'><img src={logo} className='h-6 w-6' alt="" /></span>Pulmora<span className="text-violet-400">.ml</span>
+              <span className='flex items-center'><img src={logo} className='h-6 w-6' alt="" /></span>
+              <div>
+                <span>Pulmora</span>
+                <span className="text-violet-400">.ml</span>
+              </div>
             </div>
+
             <p className="text-sm max-sm:text-center text-slate-500 leading-relaxed">
               Engineering Project in Community Service<br />
               Lung Disease Classification · VIT Bhopal University
             </p>
+
           </div>
 
           <div className='flex flex-wrap gap-10 justify-center'>
@@ -35,7 +42,7 @@ export default function Footer() {
               <h4 className="text-xs font-semibold tracking-[0.1em] uppercase text-slate-500 mb-4">Navigate</h4>
               <ul className="flex flex-col gap-2.5">
                 {NAV.map(l => (
-                  <li key={l.path}>
+                  <li key={l.label}>
                     <button
                       onClick={() => navigate(l.path)}
                       className="cursor-pointer text-sm text-slate-400 hover:text-white transition-colors"
